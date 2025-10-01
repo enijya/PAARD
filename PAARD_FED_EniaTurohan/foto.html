@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAARD</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body id="FOTO">
+    <header>
+    <!-- Logo -->
+    <h1>PAARD</h1>
+
+    <!-- Taal -->
+    <p>NL / EN</p>
+
+    <!-- Zoekbalk -->
+    <img src="images/zoekbalk.png" alt="zoekbalk"/>
+
+    <!-- Open menu button -->
+    <div>
+      <img src="images/menu.png" alt="menuicon">
+
+      <a href="menu.html">MENU</a>
+    </div>
+  </header>
+
+    <main>
+        <button id="dark-mode">Dark Mode</button>
+        <!-- FOTO'S -->
+        <h2>FOTO'S</h2>
+        <section>
+
+            <article style="background-image: url(images/fotoverslag.jpg);" tabindex="0">
+                <h2>FOTOVERSLAG: DIIV</h2>
+                <p>7 SEP 2025</p>
+            </article>
+
+            <article style="background-image: url(images/mogwai.jpg);" tabindex="0">
+                <h2>FOTOVERSLAG: MOGWAI</h2>
+                <p>31 AUG 2025</p>
+            </article>
+
+            <article style="background-image: url(images/paardvanstal.jpg);" tabindex="0">
+                <h2>FOTOVERSLAG: PAARD VAN STAL</h2>
+                <p>30 AUG 2025</p>
+            </article>
+
+            <article style="background-image: url(images/haylid.jpg);" tabindex="0">
+                <h2>FOTOVERSLAG: HAYLID & HEADFIRST</h2>
+                <p>27 JUN 2025</p>
+            </article>
+
+            <article style="background-image: url(images/mulaB.jpg);" tabindex="0">
+                <h2>FOTOVERSLAG: MULA B</h2>
+                <p>14 JUN 2025</p>
+            </article>
+
+            <article style="background-image: url(images/joeyvalence.jpg);" tabindex="0">
+                <h2>FOTOVERSLAG: JOEY VALENCE & BRAE</h2>
+                <p>6 JUL 2025</p>
+            </article>
+
+            <article style="background-image: url(images/pussyriot.jpeg);" tabindex="0">
+                <h2>FOTOVERSLAG: IN GESPREK MET PUSSY RIOT</h2>
+                <p>26 JUN 2025</p>
+            </article>
+        </section>
+
+        <!-- PAGINATION -->
+        <section>
+            <div>
+                <a href="#"></a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <span>...</span>
+                <a href="#">300</a>
+                <a href="#">&gt;</a>
+            </div>
+        </section>
+    </main>
+
+    <footer tabindex="0">
+        <h2>PAARD</h2>
+        <p>SNEL NAAR</p>
+        <nav>
+          <ul> <!-- linker rij -->
+            <li><a href="mijnaccount">Mijn account</a></li>
+            <li><a href="programma">Programma</a></li>
+            <li><a href="partners">Partners & Sponsoren</a></li>
+            <li><a href="artiesten">Artiesten info</a></li>
+          </ul>
+    
+          <ul> <!-- rechter rij -->
+            <li><a href="nieuwsbrief">Nieuwsbrief</a></li>
+            <li><a href="vragen">Veelgestelde vragen</a></li>
+            <li><a href="verhuur">Verhuur</a></li>
+            <li><a href="vacatures">Vacatures</a></li>
+          </ul>
+        </nav>
+    
+        <ul> <!-- derde rij -->
+          <li><p>Contact & Route</p></li>
+          <li><p>Prinsegracht 12</p></li>
+          <li><p>2512 GA Den Haag</p></li>
+          <li><div></div></li>
+          <li><a href="mailto:info@paard.nl">info@paard.nl</a></li>
+          <li><a href="tel:0707503434">070 750 34 34</a></li>
+        </ul>
+    
+        <ul> <!-- socials -->
+          <li><a href="https://open.spotify.com/user/paard" target="_blank"><img src="images/spotify.png" alt="Spotify"></a></li>
+          <li><a href="https://www.instagram.com/paard/" target="_blank"><img src="images/insta.png" alt="Instagram"></a></li>
+          <li><a href="https://www.facebook.com/paard" target="_blank"><img src="images/facebook.png" alt="Facebook"></a></li>
+        </ul>
+    
+        <ul> <!-- ROZE LETTERS -->
+          <li><a href="huisregels">Huisregels & Voorwaarden</a></li>
+          <li><a href="cookies">Cookie instellingen</a></li>
+          <li><a href="privacy">Privacy</a></li>
+          <li><a href="contact">Contact & Locatie</a></li>
+          <li aria-label="rainbow"><button id="party">PARTY</button></li>
+        </ul>
+      </footer>
+      <!-- Confetti library -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+    <script defer src="scripts/script.js"></script>
+</body>
+</html>

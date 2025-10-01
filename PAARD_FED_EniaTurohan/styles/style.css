@@ -1,0 +1,852 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+	box-sizing: border-box;
+  }
+  
+  /*********************/
+  /* CUSTOM PROPERTIES */
+  /*********************/
+
+  :root {
+	--color-text: black;
+	--color-background: #ffffff;
+	--color-hover: #ffe9f3;
+	--color-footer: #e6559c;
+	--color-header: #9bbce6;
+  }
+  
+  /* Dark mode varianten */
+  :root.dark {
+	--color-text: #eee;
+	--color-background: black;
+	--color-hover: #4e0023; 
+	--color-footer: #7a264e;
+	--color-header: #1e3f6a;
+  }
+
+  #dark-mode {
+	background-color: var(--color-text);
+	color: var(--color-background);
+	margin-top: 2em;
+	padding: 1em;
+	width: 40%;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: bolder;
+  }
+  
+  /* Gebruik de variabelen overal */
+  body {
+	color: var(--color-text);
+	background-color: var(--color-background);
+  }
+  
+  
+  /****************/
+  /* HOME PAGINA  */
+  /****************/
+  #HOME {
+	margin: 0;
+  }
+  
+  #HOME main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+  }
+  
+  #HOME section {
+	width: 92%;
+  }
+
+  #HOME article:hover {
+	background-color: var(--color-hover);
+	border: 1px solid var(--color-hover);
+
+  }
+  
+  #HOME h1, 
+  #HOME h2, 
+  #HOME h3, 
+  #HOME h4 {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  #HOME h1 {color: #e6559c;}
+  #FOTO h1 {color: #e03361;}
+  
+  #HOME h2 {
+	color: #9bbce6;
+	text-align: center;
+  }
+  
+  #HOME p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 900;
+  }
+  
+  #HOME main a {
+	background-color: black;
+	color: white;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: large;
+	font-weight: 600;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 3em;
+	border: 0.5px solid var(--color-text)
+}
+
+#HOME main a:hover {
+	border: 2px solid var(--color-text);
+	background-color: #e6559c;
+}
+
+
+  
+  
+  header h1 {
+	font-size: 35px;
+	margin: 2% 0;
+  }
+  
+/* TAGS */
+.tag {
+    width: max-content;
+    background-color: #9bbce6;
+    color: white !important;
+    font-size: x-small !important;
+    padding: 6px;
+}
+  
+/* HEADER */
+header {
+    display: flex;
+    flex-direction: row;
+	align-items: center;
+	gap: 1em;
+    background-color: var(--color-header);
+    padding: 0.5em 1em;
+	width: 100%;
+  }
+  
+ header > :first-child {
+  margin-right: auto;
+}
+
+header div {
+	display: flex;
+	align-items: center;
+	gap: 0.2em;
+}
+ 
+  header a, header p {
+	text-decoration: none;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: black;
+	font-weight: 600;
+  }
+
+  
+  #socials {
+    display: flex;
+    gap: 1em;
+  }
+  
+  #socials img {
+    width: 2em;
+  }
+
+
+
+
+
+  
+  
+  /* WEVAL */
+  #HOME main > section:first-of-type {
+	width: 100%;
+	height: 300px;
+	display: grid;
+	grid-template-rows: 1fr auto auto auto;
+	align-items: end;
+
+	background-image: url(../images/weval.png);
+	background-position-x: center;
+	background-size: cover;
+
+  }
+  
+  #HOME main > section:first-of-type * {
+	margin: 0 0 1% 4%;
+  }
+  
+  #HOME main > section:first-of-type h2 {
+	grid-row-start: 3;
+	color: white;
+	font-size: xx-large;
+	text-align: left;
+  }
+  
+  #HOME main > section:first-of-type p {
+	color: #9bbce6;
+	font-weight: lighter;
+	font-size: x-small;
+  }
+  
+  #HOME main > section:first-of-type p:last-of-type {
+	grid-row-start: 4;
+	margin-bottom: 5%;
+  }
+  
+  /* TWEE ARTIKELEN */
+  #HOME main > section:nth-of-type(2) {
+	display: flex;
+  }
+  
+  #HOME main > section:nth-of-type(2) article {
+	width: 45%;
+	margin: 7% 4%;
+	display: grid;
+	grid-template-rows: auto auto auto auto;
+  }
+  
+  #HOME main > section:nth-of-type(2) article h2 {
+	color: var(--color-text);
+	font-size: medium;
+	grid-row-start: 3;
+	margin: 0;
+	text-align: left;
+  }
+  
+  #HOME main > section:nth-of-type(2) article p {
+	font-size: small;
+	margin: 2% 0;
+  }
+  
+  #HOME main > section:nth-of-type(2) div {
+	height: 12em;
+
+	background-image: url(../images/dunesessions.jpg);
+	background-position: center;
+	background-size: cover;
+  }
+
+  #HOME main > section:nth-of-type(2) > article:nth-of-type(2) div {
+	background-image: url(../images/supafly.jpg);
+	background-position: center;
+	background-size: cover;
+  }
+
+  
+/* BINNENKORT */
+#HOME main > section:nth-of-type(3) > section {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(336px, 1fr));
+	gap: 1em;
+	width: 100%; /* zelfde als andere sections */
+	margin: 0 auto; /* centreren */
+  }
+  
+  #HOME main > section:nth-of-type(3) > section article {
+	border: 1px solid #b5b5b5;
+	height: 7em;
+	display: grid;
+	grid-template-columns: auto auto 1fr;
+	grid-template-rows: min-content min-content 1fr;
+	justify-content: start;	
+  }
+
+  #HOME main > section:nth-of-type(3) > section > article:nth-of-type(1) div {
+	background-image: url(../images/dunesessions.jpg);
+	background-position: center;
+	background-size: cover;
+  }
+
+  #HOME main > section:nth-of-type(3) > section > article:nth-of-type(2) div {
+	background-image: url(../images/ninosdelfuturo.jpg);
+	background-position: center;
+	background-size: cover;
+  }
+
+  #HOME main > section:nth-of-type(3) > section > article:nth-of-type(3) div {
+	background-image: url(../images/confetti.png);
+	background-position: center;
+	background-size: cover;
+  }
+
+  #HOME main > section:nth-of-type(3) > section > article:nth-of-type(4) div {
+	background-image: url(../images/musicworld.jpeg);
+	background-position: center;
+	background-size: cover;
+  }
+
+  #HOME main > section:nth-of-type(3) article h3 {
+	font-size: medium;
+	color: #e6559c;
+	grid-row-start: 2;
+	grid-column: 2 / -1;
+	margin: 0 7%;
+  }
+  
+  #HOME main > section:nth-of-type(3) article p {
+	font-size: x-small;
+	grid-row: 1 / 2;
+	grid-column: 2 / -1;
+	margin: 7% 2% 0 7%;
+	
+  }
+  
+  #HOME main > section:nth-of-type(3) article div {
+	height: 100%;
+	width: 9em;
+	grid-row: 1 / -1;
+	grid-column: 1 / 2;
+  }
+
+  #HOME main > section:nth-of-type(3) a {
+	margin: 4% 0;
+}
+
+
+  
+  /* TICKETALERTS */
+  #HOME main > section:nth-of-type(4) {
+	display: flex;
+	overflow-x: scroll;
+	gap: 5%;
+  }
+  
+  #HOME main > section:nth-of-type(4) article {
+	width: 280px;
+	height: 280px;
+	flex-shrink: 0;
+	display: grid;
+	grid-template-rows: 1fr auto auto;
+	align-items: end;
+  }
+
+  #HOME main > section:nth-of-type(4) > article:nth-of-type(1) {
+	background-image: url(../images/omarhayat.jpg);
+	background-position: center;
+	background-size: cover;
+  }
+
+  #HOME main > section:nth-of-type(4) > article:nth-of-type(2) {
+	background-image: url(../images/jescahoop.jpg);
+	background-position: center;
+	background-size: cover;
+  }
+
+  #HOME main > section:nth-of-type(4) > article:nth-of-type(3) {
+	background-image: url(../images/philip.png);
+	background-position: center;
+	background-size: cover;
+  }
+
+  #HOME main > section:nth-of-type(4) > article:nth-of-type(4) {
+	background-image: url(../images/haagsezaken.jpg);
+	background-position: center;
+	background-size: cover;
+  }
+  
+  #HOME main > section:nth-of-type(4) article h3 {
+	grid-row-start: 2;
+	margin: 0 0 6% 5%;
+	color: white;
+	font-size: x-large;
+  }
+  
+  #HOME main > section:nth-of-type(4) article p {
+	margin: 0 0 0 5%;
+	color: #9bbce6;
+	font-weight: lighter;
+  }
+  
+  /* SUPAFLYBANNER */
+  #HOME main > article:first-of-type {
+	height: 7em;
+	width: 100%;
+	margin-top: 9%;
+	display: grid;
+	grid-template-rows: 1fr auto auto;
+	align-items: end;
+
+	background-image: url(../images/supaflybanner.jpg);
+	background-position: center;
+	background-size: cover;
+  }
+  
+  #HOME main > article:first-of-type h3 {
+	grid-row-start: 2;
+	margin: 0 0 6% 5%;
+	color: white;
+	font-size: x-large;
+  }
+  
+  #HOME main > article:first-of-type p {
+	margin: 0 0 0 5%;
+	color: #9bbce6;
+	font-weight: lighter;
+  }
+
+  /* LAATSTE NIEUWS */
+  #HOME main > section:nth-of-type(5) h2 {
+	margin: 8% 0 6% 4%;
+  }
+  
+  #HOME main > section:nth-of-type(5) article {
+	height: 7em;
+	border-top: 1px solid #b5b5b5;
+	border-bottom: 1px solid #b5b5b5;
+	display: grid;
+	grid-template-rows: 1fr auto auto;
+	align-items: end;
+  }
+  
+  #HOME main > section:nth-of-type(5) article h3 {
+	grid-row-start: 2;
+	margin: 2% 0 6% 5%;
+	color: #e6559c;
+	font-size: large;
+  }
+  
+  #HOME main > section:nth-of-type(5) article p {
+	margin: 0 0 0 5%;
+	font-size: small;
+  }
+  
+  #HOME main > section:nth-of-type(5) a {
+	margin: 4%;
+  }
+  
+  /* UITGELICHT */
+  #HOME main > section:nth-of-type(6) h3 {
+	font-size: x-large;
+	margin-left: 4%;
+	color: #e6559c;
+  }
+  
+  #HOME main > section:nth-of-type(6) article {
+	height: max-content;
+	border: 1px solid #b5b5b5;
+	margin-bottom: 4%;
+  }
+  
+  #HOME main > section:nth-of-type(6) article > div {
+	position: relative;
+	width: 100%;
+	padding-top: 56.25%;
+	overflow: hidden;
+  }
+  
+  #HOME main > section:nth-of-type(6) iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+  }
+  
+/* FOOTER */
+footer {
+	background-color: var(--color-footer);
+	margin: 8% 0 0 0;
+	padding: 3% 15%;
+	color: white;
+	height: min-content;
+}
+
+footer nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+footer nav ul:last-child {
+	text-align: end;
+}
+
+footer h2 {
+	font-size: 4em;
+	margin: 2%;
+}
+
+footer ul {
+	list-style: none;
+	padding: 1%;
+	padding-left: 0;
+	width: 50%;
+
+}
+
+footer li {
+	padding: 1% 0;
+}
+
+footer a {
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-size: small;
+}
+
+footer ul p {
+	font-weight: lighter;
+	margin: 0;
+	font-size: small;
+}
+
+footer > ul:nth-of-type(2) {
+	width: 100%;
+	padding: 7% 0 14% 0;
+	border-top: 1px solid #ee76af;
+	border-bottom: 1px solid #ee76af;
+}
+
+/* SOCIALS */
+footer > ul:nth-of-type(2) {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	gap: 2em;
+	padding: 3% 0;
+}
+
+footer img {
+	width: 2.1em;
+}
+
+/* ROZE KLEINE LETTERS */
+footer > ul:nth-of-type(3) a {
+	color: #f699c4;
+}
+
+
+/*         FOTOVERSLAGEN PAGINA        */
+
+/* BASIS */
+#FOTO, 
+#FOTO main, 
+#FOTO section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+	width: 100%;
+}
+
+#FOTO h1, 
+#FOTO h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#FOTO h2 {
+    align-self: flex-start;
+    color: #e03361;
+    font-size: xx-large;
+}
+
+#FOTO article h2 {
+    color: white;
+}
+
+#FOTO p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+
+#FOTO article p {color: #e03361;}
+
+
+
+/* FOTOVERSLAGEN */
+#FOTO h2 {margin-left: 9.5%;}
+
+#FOTO main > section:first-of-type {
+    width: 80%;
+    display: grid; /* heel belangrijk, anders werkt grid-template-columns niet */
+    grid-template-columns: repeat(auto-fit, minmax(21em, 1fr));
+    gap: 1em; /* ruimte tussen de artikelen */
+    margin: 0 auto; /* centreert de sectie */
+	justify-content: center;
+}
+
+#FOTO main > section:first-of-type article {
+    display: grid;
+    height: 20em;
+    margin: 3% 0;
+    padding: 0 0 5% 6%;
+    grid-template-rows: 1fr auto auto;
+    align-items: end;
+    background-position: center;
+    background-size: cover;
+}
+
+#FOTO main > section:first-of-type article:hover {
+	border: solid 4px;
+}
+
+#FOTO main > section:first-of-type h2 {
+    grid-row-start: 2;
+    margin: 0;
+
+}
+
+#FOTO main > section:first-of-type p {
+    margin-bottom: 0;
+}
+
+/* PAGINATION */
+#FOTO main > section:nth-of-type(2) div {
+    display: flex;
+    justify-content: space-around;
+    width: 100%; 
+    align-items: center;
+    background-color: #ffb7ca;
+    padding: 6%;
+}
+
+#FOTO main > section:nth-of-type(2) a,
+#FOTO main > section:nth-of-type(2) span {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    background-color: #ffb7ca;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#FOTO main > section:nth-of-type(2) a.active {
+    background-color: #e03361; 
+    color: black;     
+    padding: 0.5em 0.8em;
+}
+
+/* FOOTER – alleen kleurregels */
+#FOTO footer {
+    background-color: #e03361;
+    color: white;
+	width: 100%;
+	margin-top: 0;
+}
+
+#FOTO footer h2 {
+    color: #ffb7ca;
+	font-size: 4em;
+}
+
+#FOTO footer ul:nth-of-type(3) {
+    border-top: 1px solid #ffb7ca;
+    border-bottom: 1px solid #ffb7ca;
+}
+
+#FOTO footer ul:nth-of-type(5) a {
+    color: #ffb7ca;
+}
+
+/* ANIMATIES */
+
+  
+
+/*regenboog knop*/
+
+@keyframes rainbow-animation {
+	0% {
+	  background-position:left bottom;
+	}
+	100% {
+	  background-position:right top;
+	}
+  }
+  
+  li[aria-label="rainbow"] {
+	--rainbow:linear-gradient(
+	  45deg,
+	  #fb59b1, 
+	  #fb9bc1,
+	  #f7c5e3,
+	  #fc42ae,
+	  #ee5372,
+	  #fb59b1,
+	  #fb9bc1,
+	  #f7c5e3,
+	  #fc42ae,
+	  #ee5372,
+	  #fb59b1
+
+	);
+  }
+  
+  li[aria-label="rainbow"] button {
+	border-radius:1em;
+	height: 3em;
+	width: 100%;
+	font-size: medium;
+	color: white;
+   
+	background-image:var(--rainbow);
+	  
+	background-size:200% 200%;
+	
+	animation-name:rainbow-animation;
+	animation-duration:2s;
+	animation-timing-function:linear;
+	animation-iteration-count: infinite;
+  }
+
+  li[aria-label="rainbow"] button:hover {
+	border-color: white; 
+	border-width: 5px; 
+  }
+
+  /*disco animatie*/
+  @keyframes disco-bounce {
+	0% {
+	  scale: 1;
+	}
+	50% {
+	  scale: 1.1;
+	}
+	100% {
+	  scale: 1;
+	}
+  }
+  
+  /* bounce class */
+  .disco-animate {
+	animation-name: disco-bounce;
+	animation-duration: 0.6s;
+	animation-iteration-count: infinite;
+  }
+  
+
+/*roze achtergrond*/
+@keyframes rainbow-background {
+	0% {
+	  background-position: left bottom;
+	}
+	100% {
+	  background-position: right top;
+	}
+  }
+  
+  .disco-background {
+	--rainbow: linear-gradient(
+	  45deg,
+	  #ffcff0,
+	  #fb9bc1,
+	  #f7c5e3,
+	  #ffb0de,
+	  #ffffff,
+	  #ffcff0,
+	  #fb9bc1,
+	  #f7c5e3,
+	  #ffb0de,
+	  #ffffff,
+	  #ffcff0
+	);
+	background-image: var(--rainbow);
+	background-size: 400% 400%;
+	animation: rainbow-background 6s linear infinite;
+  }
+
+
+
+
+  /*MENU PAGINA*/
+
+
+#menupagina {
+    display: flex;
+    flex-direction: column;
+    background-color: #9bbce6;
+    margin: 0;
+	width: 100%;
+	color: #e6559c
+}
+
+#menupagina h1,
+#menupagina h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#menupagina p,
+#menupagina a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#menupagina a {
+    text-decoration: none;
+}
+
+/* MENU ZELF ITEMS */
+
+#menupagina li {
+    list-style: none;
+    padding: 2% 0 ;
+    width: max-content;
+}
+
+#menupagina ul {
+    width: 90%;
+    padding-left: 20%;
+	border: none;
+}
+
+#menupagina #groot a {
+    font-size: 1.6em;
+    font-weight: 500;
+}
+
+#menupagina #klein a { 
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+/* FOOTER */
+
+#menupagina footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 8%;
+    align-items: center;
+	background-color: #9bbce6;
+}
+
+#menupagina #socials img {
+    width: 2.1em;
+}
+
+#menupagina #socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5em;
+    margin-top: 6%;
+}
+
+#menupagina #socials li {
+    padding: 0;
+}
+
+#menupagina footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+	padding: 0;
+	gap: 1em;
+}
+
+#menupagina footer a {
+    font-weight: 900;
+    font-size: 1em;
+}
